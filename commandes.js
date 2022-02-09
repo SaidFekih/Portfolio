@@ -1,3 +1,4 @@
+//fichier non utiliser pour le moment.
 
 function getResolution() {
    let screenWidth = screen.width ;
