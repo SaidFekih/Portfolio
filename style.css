@@ -382,3 +382,231 @@ section{
     }
 
 }
+
+.losange-90{
+    width  : 0;
+    height : 0;
+    position : relative;
+    top : -25px;
+    border : 25px solid transparent;
+    border-bottom-color : green;
+  }
+ .losange-90:after {
+    width  : 0;
+    height : 0;
+    content : '';
+    position : absolute;
+    left : -25px;
+    top  : 25px;
+    border : 25px solid transparent;
+    border-top-color : green; 
+  }
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal_content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+
+  .container{
+    position: absolute;
+    background: #f0f0f0;
+    height: 500px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 16px 16px 10px #d7d7d7;
+    border-radius: 25px;
+}
+.face{
+    position: relative;
+    width: 60px;
+    height: 250px;
+    background:#fce2c4;
+    border: 4px solid  #ffa945;
+    border-bottom: none;
+    top: 100px;
+    left: 220px;
+    transform: rotate(4deg);
+}
+.face::before{
+    content: ""; 
+    position: absolute;
+    top: 170px;
+    left: -12px;
+    height: 14px;
+    width: 14px;
+    background:#fce2c4;
+    border-left: 6px solid  #ffa945;
+    border-bottom: 4px solid  #ffa945;
+    border-bottom-left-radius: 10px;
+    transform: skew(-40deg);
+
+}
+.face::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 80px;
+    right: -25px;  
+    background:#fce2c4;
+    border: 4px solid  #ffa945;
+    border-left: none;
+    border-top: none;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.nose{
+    position:relative;
+    background:#fce2c4;
+    border: 4px solid  #ffa945;
+    border-right: none;
+    border-radius: 14px 0 0 14px;
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    left: 172px;
+    transform: rotate(4deg);
+    z-index: 1;
+}
+.nose::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-top: solid 4px #ffa945;
+    background: #fce2c4;
+    top: -4px;
+    left: 20px;
+}
+.eye{
+    position: relative;
+    height: 44px;
+    width: 40px;
+    border: solid 3px #000;
+    background: #fff;
+    border-radius: 50%;
+    bottom: 188px;
+    left: 206px;
+    transform: rotate(4deg);
+
+}
+.eye::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 12px;
+    border: solid 4px #000;
+    background: black;
+    border-radius: 50%;
+    top: 15px;
+    left: 10px;
+    transform: rotate(4deg);
+}
+.eye::before{
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    top: 18px;
+    left: 18px;
+    transform: rotate(4deg);
+    z-index: 1;
+}
+.eye1{
+width: 40px;
+height: 40px;
+bottom: 224px;
+left: 234px;
+z-index: 3;
+}
+.eye1::after{
+   top:10px;
+}
+.eye1::before{
+top: 12px;
+}
+.hair{
+    position: relative;
+    z-index: 50;
+}
+.hair>div:nth-child(1){
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 190px;
+    bottom: 290px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0 ;
+    transform: rotate(30deg);
+}
+.hair>div:nth-child(2){
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 210px;
+    bottom: 290px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0 ;
+    transform: rotate(70deg);
+}
+.hair>div:nth-child(3){
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 230px;
+    bottom: 295px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0 ;
+    transform: rotate(130deg);
+}
+.hair>div:nth-child(4){
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 210px;
+    bottom: 270px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0 ;
+    transform: rotate(20deg);
+}
+.hair>div:nth-child(5){
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 260px;
+    bottom: 270px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0 ;
+    transform: rotate(10deg);
+}

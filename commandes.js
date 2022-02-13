@@ -1,4 +1,3 @@
-//fichier non utilisé pour le moment.
 
 function getResolution() {
    let screenWidth = screen.width ;
@@ -10,6 +9,3 @@ function switchMenu(){
     alert(widthvalue);
 
 }
-
-//hello mella kifeh
-// kifeh
