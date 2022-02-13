@@ -428,10 +428,18 @@ section{
   
   .modal_close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    color: grey;
+    bottom: 245px;
+    right: 6px;
+    color: #fff;
+    font-size: 35px;
     text-decoration: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(202, 196, 200);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .container{
@@ -442,8 +450,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    box-shadow: 16px 16px 10px #d7d7d7;
-    border-radius: 25px;
+    border-radius: 25px 5px 25px 25px;
 }
 .face{
     position: relative;
